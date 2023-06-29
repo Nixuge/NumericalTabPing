@@ -1,11 +1,24 @@
-# NumericalTabPing
-A simple mod that replaces the ping icon in tab with your actual ping as text
+# Mod template
+A simple, easy to setup 1.8.9 Forge mod template.
 
-# Credits
-Fucking thanks to:
-- https://github.com/GTNewHorizons/ExampleMod1.7.10 (🙏)
-- https://github.com/LegacyModdingMC/UniMixins
+## Just run :
 
-While I usually really dislike bloated libraries like that, since it's only used for compiling it's ok.
+### Linux:
+```sh
+./setup.py
+./gradlew setupDecompWorkspace
+# then to run a debug client
+./gradlew runClient
+# or to build a mod jar
+./gradlew build
+```
 
-I can understand that things change, but I can't understand how ANYTHING gradle-related has to be almost completely redone every version otherwise it just DOESN'T work.
+### Windows:
+```sh
+python setup.py
+gradlew.bat setupDecompWorkspace
+# then to run a debug client
+gradlew.bat runClient
+# or to build a mod jar
+gradlew.bat build
+```
