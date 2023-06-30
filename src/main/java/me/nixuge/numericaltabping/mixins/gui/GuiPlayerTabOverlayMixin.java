@@ -46,7 +46,7 @@ public class GuiPlayerTabOverlayMixin {
         processedFirstCall = true;
         // Note: this technically sometimes adds more padding than needed and rarely not enough,
         // but I can't do better without rewriting huge parts of the original function,
-        return fontRenderer.getStringWidth(text + "100ms") + 14;
+        return fontRenderer.getStringWidth(text + "100ms");
         // Note2: To match vanilla I should remove 14 here (the already present ping image padding)
         // But adding 14 instead makes the tab a bit wider (which is enjoyable) and greatly reduces overlap
         // (at least from some tests on Hypixel's Bedwars Lobby #1)
